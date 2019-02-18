@@ -1,10 +1,3 @@
-# only import scipy specific functions, never use "import scipy"
-# PROPER USE: "from scipy import XXXXXX"
-
-#import numpy as np
-#from scipy import special
-#import matplotlib.pyplot as plt
-
 import numpy as np
 
 sudoku = np.array(
