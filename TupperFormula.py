@@ -16,7 +16,7 @@ def tupperTXT(y):
         array = [ [ Tupper(x,z) for x in range(106) ] for z in range(y,y+17) ]
         for row in array:
             for value in row[::-1]:
-                f.write("█"*value+' '*(not value))
+                f.write("\u2588"*value+' '*(not value))
             f.write(os.linesep)
 
 
