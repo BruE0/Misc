@@ -1,5 +1,3 @@
-import random
-
 CarlosMatos = ["mmh mmh NO NO NOOH", "Hey hey heeeeeeeeeey…. Hey hey heeeeeeeeeey…. Hey hey heeeeeeeeeey",
                "BITCONEEEEEEEEEEEEEEET", "wasawasawasawasawasa",
                "that this was gonna be a scammer game:"+
@@ -16,4 +14,9 @@ CarlosMatos = ["mmh mmh NO NO NOOH", "Hey hey heeeeeeeeeey…. Hey hey heeeeeeee
                "And hey let me tell you something, that each and every one of YOU, has the opportunity to become,"+
                " like those amazing people that we know here FROM VIET NAM! "]
 
-print( random.choice(CarlosMatos) )
+def main():
+    import random
+    print( random.choice(CarlosMatos) )
+
+if __name__ == "__main__": main()
+    
