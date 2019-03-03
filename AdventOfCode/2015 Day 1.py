@@ -17,5 +17,5 @@ for index,char in enumerate(line):
         raise SystemError("Expecting ( or ) characters only")
 
     if level < 0:
-        print("First entering basement in level:",index)
+        print("First entering basement in level:",index+1)
         break
