@@ -1,4 +1,6 @@
-# My Python 3<img src="https://www.python.org/static/opengraph-icon-200x200.png" width=40> code open for the public (also known as you). It currently cointains:
+# My Python 3<img src="https://www.python.org/static/opengraph-icon-200x200.png" width=40> code open for the public (also known as you). 
+
+#### It currently cointains:
 
 * Miscellaneous code
 * Advent of Code 2015 (between 0 and 100 % done)
