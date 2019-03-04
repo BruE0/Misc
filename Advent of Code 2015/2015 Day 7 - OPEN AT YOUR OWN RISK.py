@@ -1,4 +1,4 @@
-# Advent of Code 2015. Day 9#
+# Advent of Code 2015. Day 7 #
 #
 # This code is currently considered level A / 10 danger. Read it at your own risk. You have been advised
 #                    Spagetthiness = ***__
