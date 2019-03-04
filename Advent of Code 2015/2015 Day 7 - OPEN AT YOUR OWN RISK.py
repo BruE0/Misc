@@ -45,6 +45,6 @@ for _ in range(109):
 print(a)
 
 # Answer for part 2 is obtained by literally going to the end of your input file,
-#   "1674 -> b" is a few lines before the last one.
+# more especifically the line "1674 -> b", which is a few lines before the last one.
 # change 1674 by the value you obtained in part 1 and do it again.
 # YOLO Strats, brother.
