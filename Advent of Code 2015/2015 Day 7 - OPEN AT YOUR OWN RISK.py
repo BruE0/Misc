@@ -1,6 +1,6 @@
 # Advent of Code 2015. Day 9#
 #
-# This code is currently considered a level A / 10 danger. Read it at your own risk. You have been advised
+# This code is currently considered level A / 10 danger. Read it at your own risk. You have been advised
 #                    Spagetthiness = ***__
 #      #                 Bad logic = ****_
 #     # #          PEP8 compliance = _____
