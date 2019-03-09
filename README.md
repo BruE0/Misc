@@ -1,4 +1,4 @@
-# My Python 3<img src="https://www.python.org/static/opengraph-icon-200x200.png" width=40> files open for the public (also known as you). 
+# My Python 3<img src="https://www.python.org/static/opengraph-icon-200x200.png" width=40> files open for the public (also known as you). I don't know why you would want though.
 
 #### It currently cointains:
 
