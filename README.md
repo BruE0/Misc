@@ -6,4 +6,4 @@
 * Solutions for Advent of Code 2015 (between 0 and 100 % done).
 
 
-Quality Assurance tests were done by my employer (i.e. my pet spider Billy.)
+Quality Assurance tests were performed by my employer (i.e. my pet spider Billy.)
