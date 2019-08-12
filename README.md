@@ -6,4 +6,4 @@
 * Solutions for Advent of Code 2015 (between 0 and 100 % done).
 
 
-Quality Assurance tests were done by my employer (i.e. my pet spider Billy. Although he cannot speak the human language, he does perform movements when I approach him, and after enough approaches I developed a system of communication. This system however is currently not perfected and may be simply misinterpreting completely random data.)
+Quality Assurance tests were done by my employer (i.e. my pet spider Billy.)
