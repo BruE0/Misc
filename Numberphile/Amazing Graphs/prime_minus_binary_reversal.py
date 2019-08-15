@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-# prime_minus_binary_reversal.py
-
+"""
+    prime_minus_binary_reversal.py
+    2019.08
+    https://oeis.org/A265326
+n-th prime minus its binary reversal.
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
