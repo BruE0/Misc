@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-# fly_straight.py
+"""
+    fly_straight.py
+    2019.08
+    https://oeis.org/A133058
+a(0)=a(1)=1; 
+for n>1, a(n) = a(n-1) + n + 1 if a(n-1) and n are coprime, 
+otherwise a(n) = a(n-1)/gcd(a(n-1),n).
+"""
 
 
 import matplotlib.pyplot as plt
