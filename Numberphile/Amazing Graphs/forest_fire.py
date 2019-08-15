@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 """
-    Python
     forest_fire.py
     2019.08
     https://oeis.org/A229037
