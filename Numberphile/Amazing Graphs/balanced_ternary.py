@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-# balanced_ternary.py
 
+"""
+    balanced_ternary.py
+    2019.08
+"""
 
 import matplotlib.pyplot as plt
 import numpy as np
