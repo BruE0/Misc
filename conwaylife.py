@@ -8,7 +8,6 @@
     - wait for input:
       > empty line to advance a certain step(default=1) of generations.
       > writing a number changes step.
-
 """
 
 
