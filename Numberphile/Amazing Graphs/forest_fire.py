@@ -12,7 +12,11 @@ form an arithmetic progression.
 It takes too long for a large number of points.
 """
 
-NO_POINTS = 1000
+import matplotlib.pyplot as plt
+
+
+NO_POINTS = 2000
+
 
 def three_points_same_distance(lst):
     X = len(lst) - 1
@@ -40,13 +44,9 @@ def forest_fire(size):
 
 burntforest = forest_fire(NO_POINTS)
 
-
-import matplotlib.pyplot as plt
-
 fig, ax = plt.subplots(1)
 
 ax.plot(burntforest, ".")
-
 ax.minorticks_on()
 ax.grid(True, which="both")
 plt.show()
