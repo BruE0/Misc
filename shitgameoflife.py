@@ -1,16 +1,23 @@
-# 2018
-# test.py
-# Shit Game Of Life
+#!/usr/bin/env python3
+"""
+    conwaylife.py
+    2018
+    simple console based game of life using numpy.
+
+    - loads a starting grid from txt file.
+    - wait for input:
+      > empty line to advance a certain step(default=1) of generations.
+      > writing a number changes step.
+
+"""
+
 
 import numpy as np
 import os
 
-with open("shitgameoflife.txt", "rb") as f:
-    data = f.read().splitlines()
 
-house = np.vstack([np.frombuffer(line, dtype=np.uint8) for line in data])
-house = np.where(house < 46, 1, 0)
-house = np.pad(house, pad_width=1, mode='constant', constant_values=0)
+CLEAR_CONSOLE = "cls" if os.name == "nt" else "clear"
+
 
 def count_around(nparray):
     nparray = (np.roll(nparray, 1, axis=0) + np.roll(nparray, -1, axis=0) +
@@ -28,26 +35,40 @@ def live_or_die(nparray, count_around):
 
 
 def drawboard(nparray):
-    for rows in nparray:
-        for char in rows:
-            print("#"*char+" "*(not char), end="")
-        print()
+    array_draw = np.where(nparray == 1, "#", " ")
+    print("\n".join([''.join(row) for row in array_draw]))
 
 
-generation = 0
-step = 1
+def loadboard(filename, live="1"):
+    with open(filename, "rb") as f:
+        data = f.read().splitlines()
 
-while True:
+    nparray = np.vstack([np.frombuffer(line, dtype=np.uint8) for line in data])
+    nparray = np.where(nparray == ord(true), 1, 0)
+    nparray = np.pad(nparray, pad_width=1, mode='constant', constant_values=0)
+    return nparray
 
-    os.system('cls' if os.name == "nt" else "clear")
 
-    for _ in range(step):
-        around = count_around(house)
-        house[1:-1,1:-1] = live_or_die(house[1:-1,1:-1],around[1:-1,1:-1])
-        generation += 1
 
-    drawboard(house[1:-1,1:-1])
-    answer = input(f"{generation:06d}>")
-    if answer.isdigit():
-        step = int(answer)
+def main():
+    house = loadboard("conwayboard.txt", live="#")
+    generation = 0
+    step = 1
 
+    while True:
+        os.system(CLEAR_CONSOLE)
+
+        for _ in range(step):
+            around = count_around(house)
+            house[1:-1,1:-1] = live_or_die(house[1:-1,1:-1],around[1:-1,1:-1])
+            generation += 1
+
+        drawboard(house[1:-1,1:-1])
+
+        answer = input(f"{generation:06d}>")
+        if answer.isdigit():
+            step = int(answer)
+
+
+if __name__ == "__main__":
+    main()
