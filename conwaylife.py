@@ -20,6 +20,7 @@ CLEAR_CONSOLE = "cls" if os.name == "nt" else "clear"
 
 
 def count_around(nparray):
+    '''Counts the number of cells alive around each cell.'''
     nparray = (np.roll(nparray, 1, axis=0) + np.roll(nparray, -1, axis=0) +
         np.roll(nparray, 1, axis=1) + np.roll(nparray, -1, axis=1) +
         np.roll(nparray, (1, 1), axis=(0, 1)) + np.roll(nparray, (-1, 1), axis=(0, 1)) +
@@ -29,6 +30,7 @@ def count_around(nparray):
 
 
 def live_or_die(nparray, count_around):
+    '''Uses Conway's standard rules to check if a cell will live or die.'''
     nparray = np.where(nparray == 1, np.where((count_around == 2) | (
         count_around == 3), 1, 0), np.where(count_around == 3, 1, 0))
     return nparray
