@@ -25,12 +25,11 @@ def prime_minus_binary_reversal(num):
     return num - int(binary_reversed, 2)
 
 
-primes = sieve(1000000)
-
-
-reversal = np.vectorize(prime_minus_binary_reversal)
 
 fig, ax = plt.subplots(1)
+
+primes = sieve(1000000)
+reversal = np.vectorize(prime_minus_binary_reversal)
 
 ax.plot(primes, reversal(primes), ".", markersize=0.5)
 
