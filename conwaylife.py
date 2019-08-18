@@ -45,7 +45,7 @@ def loadboard(filename, live="1"):
         data = f.read().splitlines()
 
     nparray = np.vstack([np.frombuffer(line, dtype=np.uint8) for line in data])
-    nparray = np.where(nparray == ord(true), 1, 0)
+    nparray = np.where(nparray == ord(live), 1, 0)
     nparray = np.pad(nparray, pad_width=1, mode='constant', constant_values=0)
     return nparray
 
