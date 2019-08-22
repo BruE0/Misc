@@ -3,8 +3,7 @@
 #### It currently cointains:
 
 * Miscellaneous code (nothing worth your time).
-* Numberphile stuff (also nothing that stands out either).
-* Solutions for Advent of Code 2015 (not 100 % done and I won't finish either).
+* Solutions for Advent of Code 2015 (not 100 % done).
 
 
 Quality Assurance tests were not performed.
